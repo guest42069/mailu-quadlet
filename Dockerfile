@@ -1,4 +1,4 @@
-FROM docker.io/library/golang:alpine AS build
+FROM --platform=$BUILDPLATFORM docker.io/library/golang:alpine AS build
 WORKDIR /go/src
 ARG TARGETOS TARGETARCH
 ENV GOOS="$TARGETOS" GOARCH="$TARGETARCH" GOFLAGS="-buildvcs=false -trimpath" CGO_ENABLED=0

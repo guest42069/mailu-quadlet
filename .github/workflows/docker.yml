@@ -26,10 +26,10 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and push mailu2quadlet
+      - name: Build and push mailu-quadlet
         uses: docker/build-push-action@v5
         with:
           file: ./Dockerfile
           platforms: linux/amd64,linux/386,linux/arm64,linux/arm/v7
           push: true
-          tags: ${{ env.REGISTRY }}/${{ github.actor }}/mailu2quadlet:latest
+          tags: ${{ env.REGISTRY }}/${{ github.actor }}/mailu-quadlet:latest

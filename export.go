@@ -8,7 +8,6 @@ import (
 	"text/template"
 
 	"github.com/compose-spec/compose-go/types"
-	"github.com/joho/godotenv"
 )
 
 func (m *Mailu) Export() {
@@ -20,7 +19,7 @@ func (m *Mailu) Export() {
 
 func (m *Mailu) envfile() {
 	envfile := m.uuid + ".env"
-	godotenv.Write(m.env, envfile)
+	os.Rename(m.env, envfile)
 	log.Println(envfile)
 }
 

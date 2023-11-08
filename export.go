@@ -79,7 +79,7 @@ func (m *Mailu) containers() {
 			m.project.Services[i].Annotations["ip"] = m.project.Services[i].Networks["default"].Ipv4Address
 		}
 		if m.project.Services[i].Name == "redis" {
-			m.project.Services[i].Image = "docker.io/library" + m.project.Services[i].Image
+			m.project.Services[i].Image = "docker.io/library/" + m.project.Services[i].Image
 		}
 		container := m.uuid + "-" + m.project.Services[i].Name + ".container"
 		file, err := os.OpenFile(container, os.O_CREATE|os.O_WRONLY, 0644)

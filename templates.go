@@ -25,7 +25,7 @@ Restart=always
 TimeoutStartSec=900
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
 `
 
 const networkTmpl = `[Network]

@@ -16,7 +16,7 @@ Usage of /cli:
         mailu.env file for mailu (default "mailu.env")
   -uuid string
         optional custom uuid to use for generated
-$ podman run run -v $(pwd):/data:z ghcr.io/guest42069/mailu-quadlet --uuid example
+$ podman run -v $(pwd):/data:z ghcr.io/guest42069/mailu-quadlet --uuid example
 2023/11/06 15:54:35 example-snappymail.volume
 2023/11/06 15:54:35 example-dav.volume
 2023/11/06 15:54:35 example-certs.volume

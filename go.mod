@@ -1,4 +1,4 @@
-module github.com/guest42069/mailuquadlet
+module github.com/cyberworm-uk/mailuquadlet
 
 go 1.21.3
 

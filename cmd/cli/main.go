@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"github.com/cyberworm-uk/mailuquadlet"
+	mailuquadlet "github.com/cyberworm-uk/mailu-quadlet"
 )
 
 func main() {
